@@ -52,6 +52,7 @@ fn make_list(values: &[i32]) -> Option<Box<ListNode>> {
     head
 }
 
+// O(n) time and O(n) space.
 fn add_two_numbers(l1: Option<Box<ListNode>>, l2: Option<Box<ListNode>>) -> Option<Box<ListNode>> {
     let mut l1 = l1;
     let mut l2 = l2;
