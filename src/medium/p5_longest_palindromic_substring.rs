@@ -19,6 +19,7 @@
 pub struct Solution;
 
 impl Solution {
+    // Complexity: O(n^2)
     pub fn longest_palindrome(s: String) -> String {
         let s = s.as_bytes();
         let mut start = 0;
