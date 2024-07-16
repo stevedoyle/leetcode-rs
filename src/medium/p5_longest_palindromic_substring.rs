@@ -25,8 +25,8 @@ impl Solution {
         let mut start = 0;
         let mut end = 0;
         for i in 0..s.len() {
-            let len1 = Self::expand_around_center(&s, i, i);
-            let len2 = Self::expand_around_center(&s, i, i + 1);
+            let len1 = Self::expand_around_center(s, i, i);
+            let len2 = Self::expand_around_center(s, i, i + 1);
             let len = len1.max(len2);
             if len > end - start {
                 start = i - (len - 1) / 2;
