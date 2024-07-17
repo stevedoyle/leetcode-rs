@@ -53,7 +53,10 @@ fn make_list(values: &[i32]) -> Option<Box<ListNode>> {
 }
 
 // O(n) time and O(n) space.
-fn add_two_numbers(l1: Option<Box<ListNode>>, l2: Option<Box<ListNode>>) -> Option<Box<ListNode>> {
+pub fn add_two_numbers(
+    l1: Option<Box<ListNode>>,
+    l2: Option<Box<ListNode>>,
+) -> Option<Box<ListNode>> {
     let mut l1 = l1;
     let mut l2 = l2;
     let mut carry = 0;
@@ -86,6 +89,32 @@ fn add_two_numbers(l1: Option<Box<ListNode>>, l2: Option<Box<ListNode>>) -> Opti
     result.unwrap().next
 }
 
+use itertools::Itertools;
+
+// Another version of the function that takes slices instead of linked lists.
+pub fn add_two_numbers_v2(l1: &[i32], l2: &[i32]) -> Vec<i32> {
+    let mut carry = 0;
+
+    let mut result: Vec<_> = l1
+        .iter()
+        .zip_longest(l2.iter())
+        .map(|pair| pair.or(&0, &0))
+        .map(|(l, r)| {
+            let mut s = l + r + carry;
+            carry = 0;
+            if s >= 10 {
+                s -= 10;
+                carry = 1;
+            }
+            s
+        })
+        .collect();
+    if carry > 0 {
+        result.push(carry);
+    }
+    result
+}
+
 #[cfg(test)]
 mod tests {
     use super::*;
@@ -106,5 +135,15 @@ mod tests {
         let l2 = make_list(&[9, 9, 9, 9]);
         let expected = make_list(&[8, 9, 9, 9, 0, 0, 0, 1]);
         assert_eq!(add_two_numbers(l1, l2), expected);
+    }
+
+    #[test]
+    fn test_v2() {
+        assert_eq!(add_two_numbers_v2(&[2, 4, 3], &[5, 6, 4]), vec![7, 0, 8]);
+        assert_eq!(add_two_numbers_v2(&[0], &[0]), vec![0]);
+        assert_eq!(
+            add_two_numbers_v2(&[9, 9, 9, 9, 9, 9, 9], &[9, 9, 9, 9]),
+            vec![8, 9, 9, 9, 0, 0, 0, 1]
+        );
     }
 }
