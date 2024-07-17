@@ -1,1 +1,2 @@
+mod p10_regular_expression_matching;
 mod p4_median_of_two_sorted_arrays;
