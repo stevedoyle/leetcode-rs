@@ -48,6 +48,19 @@ impl Solution {
         Self::dp(s.as_str(), p.as_str(), 0, 0, &mut memo)
     }
 
+    // Dynamic programming approach.
+    // Using memoization to store the results of the subproblems.
+    // dp(i, j) returns true if the text from the i-th character of s to the end matches the pattern
+    // from the j-th character of p to the end.
+    // If the pattern has a '*' at the j-th position, then there are two cases to consider:
+    // 1. The '*' is ignored, and the pattern is reduced by two characters.
+    // 2. The '*' matches the i-th character of s, and the pattern remains unchanged.
+    // If the pattern has a '.' at the j-th position, then it matches any single character.
+    // If the pattern has a character at the j-th position, then it must match the i-th character of s.
+    // If the pattern has reached the end, then the text must also have reached the end.
+    //
+    // Time complexity: O(m*n), where m is the length of s and n is the length of p.
+    // Space complexity: O(m*n).
     fn dp(s: &str, p: &str, i: usize, j: usize, memo: &mut HashMap<(usize, usize), bool>) -> bool {
         if let Some(&result) = memo.get(&(i, j)) {
             return result;
