@@ -1,8 +1,8 @@
 repos:
 - repo: https://github.com/stevedoyle/pre-commit-rust
-  rev: v1.0.2
+  rev: v1.0.3
   hooks:
-  - id: fmt
+  - id: rustfmt
   - id: cargo-check
   - id: cargo-test
   - id: clippy
