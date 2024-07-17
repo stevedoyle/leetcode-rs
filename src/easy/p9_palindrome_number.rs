@@ -59,16 +59,16 @@ mod tests {
 
     #[test]
     fn test_9() {
-        assert_eq!(is_palindrome(121), true);
-        assert_eq!(is_palindrome(-121), false);
-        assert_eq!(is_palindrome(10), false);
-        assert_eq!(is_palindrome(0), true);
-        assert_eq!(is_palindrome(1_000_000_001), true);
+        assert!(is_palindrome(121));
+        assert!(!is_palindrome(-121));
+        assert!(!is_palindrome(10));
+        assert!(is_palindrome(0));
+        assert!(is_palindrome(1_000_000_001));
 
-        assert_eq!(is_palindrome_no_string(121), true);
-        assert_eq!(is_palindrome_no_string(-121), false);
-        assert_eq!(is_palindrome_no_string(10), false);
-        assert_eq!(is_palindrome_no_string(0), true);
-        assert_eq!(is_palindrome_no_string(1_000_000_001), true);
+        assert!(is_palindrome_no_string(121));
+        assert!(!is_palindrome_no_string(-121));
+        assert!(!is_palindrome_no_string(10));
+        assert!(is_palindrome_no_string(0));
+        assert!(is_palindrome_no_string(1_000_000_001));
     }
 }

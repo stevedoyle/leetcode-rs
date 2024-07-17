@@ -1,6 +1,6 @@
 repos:
 - repo: https://github.com/stevedoyle/pre-commit-rust
-  rev: v1.0.3
+  rev: v1.0.5
   hooks:
   - id: rustfmt
   - id: cargo-check
