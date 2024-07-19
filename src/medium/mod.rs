@@ -5,3 +5,5 @@ mod p5_longest_palindromic_substring;
 mod p6_zigzag_conversion;
 mod p7_reverse_integer;
 mod p8_string_to_integer;
+
+mod p49_group_anagrams;
