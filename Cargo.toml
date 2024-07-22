@@ -4,5 +4,10 @@ version = "0.1.0"
 edition = "2021"
 
 [dependencies]
+criterion = "0.5.1"
 itertools = "0.13.0"
 regex = "1.10.5"
+
+[[bench]]
+name = "p15_three_sum_bench"
+harness = false
