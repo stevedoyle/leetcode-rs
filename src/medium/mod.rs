@@ -4,6 +4,7 @@ pub mod p15_three_sum;
 mod p16_three_sum_closest;
 mod p17_letter_combinations_phone;
 mod p18_four_sum;
+mod p19_remove_nth_node_from_end_of_list;
 mod p2_add_two_numbers;
 mod p3_longest_substring;
 mod p5_longest_palindromic_substring;
