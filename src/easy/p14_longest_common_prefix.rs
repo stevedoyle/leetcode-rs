@@ -24,6 +24,8 @@ If there is no common prefix, return an empty string "".
     strs[i] consists of only lowercase English letters.
 */
 
+#![allow(dead_code)]
+
 struct Solution;
 
 impl Solution {

@@ -27,6 +27,8 @@ Constraints:
 strs[i] consists of lowercase English letters.
 */
 
+#![allow(dead_code)]
+
 struct Solution;
 
 impl Solution {

@@ -60,6 +60,8 @@ Constraints:
 1 <= num <= 3999
 */
 
+#![allow(dead_code)]
+
 struct Solution;
 
 impl Solution {
