@@ -5,4 +5,5 @@ mod p20_valid_parentheses;
 mod p21_merge_two_sorted_lists;
 mod p26_remove_duplicates_from_sorted_array;
 mod p27_remove_element;
+mod p28_implement_strstr;
 mod p9_palindrome_number;
