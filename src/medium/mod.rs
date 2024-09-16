@@ -7,6 +7,7 @@ mod p18_four_sum;
 mod p19_remove_nth_node_from_end_of_list;
 mod p22_generate_parentheses;
 mod p24_swap_nodes_in_pairs;
+mod p29_divide_two_integers;
 mod p2_add_two_numbers;
 mod p3_longest_substring;
 mod p49_group_anagrams;
