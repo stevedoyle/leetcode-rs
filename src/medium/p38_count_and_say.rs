@@ -9,22 +9,7 @@ impl Solution {
     pub fn count_and_say_iterative(n: i32) -> String {
         let mut result = "1".to_string();
         for _ in 1..n {
-            let mut temp = String::new();
-            let mut count = 1;
-            let mut prev = result.chars().nth(0).unwrap();
-            for c in result.chars().skip(1) {
-                if c == prev {
-                    count += 1;
-                } else {
-                    temp.push_str(&count.to_string());
-                    temp.push(prev);
-                    prev = c;
-                    count = 1;
-                }
-            }
-            temp.push_str(&count.to_string());
-            temp.push(prev);
-            result = temp;
+            result = Solution::say(result);
         }
         result
     }
@@ -59,6 +44,12 @@ impl Solution {
 #[cfg(test)]
 mod tests {
     use super::*;
+
+    #[test]
+    fn test_say() {
+        assert_eq!(Solution::say("1".to_string()), "11".to_string());
+        assert_eq!(Solution::say("222".to_string()), "32".to_string());
+    }
 
     #[test]
     fn test_iterative() {
