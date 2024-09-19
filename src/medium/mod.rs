@@ -9,6 +9,7 @@ mod p22_generate_parentheses;
 mod p24_swap_nodes_in_pairs;
 mod p29_divide_two_integers;
 mod p2_add_two_numbers;
+mod p38_count_and_say;
 mod p3_longest_substring;
 mod p49_group_anagrams;
 mod p5_longest_palindromic_substring;
