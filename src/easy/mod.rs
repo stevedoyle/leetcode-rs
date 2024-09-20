@@ -8,4 +8,5 @@ mod p27_remove_element;
 mod p28_implement_strstr;
 mod p35_search_insert_position;
 mod p58_length_of_last_word;
+mod p66_plus_one;
 mod p9_palindrome_number;
