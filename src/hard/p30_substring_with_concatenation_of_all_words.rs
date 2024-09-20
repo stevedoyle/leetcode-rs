@@ -31,6 +31,8 @@
 // - words[i] consists of lowercase English letters.
 // - All the strings of words are unique.
 
+#![allow(dead_code)]
+
 use std::collections::HashMap;
 
 pub struct Solution;

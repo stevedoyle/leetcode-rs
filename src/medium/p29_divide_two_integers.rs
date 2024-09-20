@@ -32,6 +32,8 @@
 // divisor != 0
 // Tags: Math, Binary Search
 
+#![allow(dead_code)]
+
 pub struct Solution;
 
 impl Solution {

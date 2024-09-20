@@ -16,6 +16,8 @@
 // 1 <= s.length <= 1000
 // s consist of only digits and English letters.
 
+#![allow(dead_code)]
+
 pub struct Solution;
 
 impl Solution {
