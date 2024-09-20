@@ -12,6 +12,7 @@ mod p2_add_two_numbers;
 mod p34_find_first_and_last_position_of_element_in_sorted_array;
 mod p38_count_and_say;
 mod p3_longest_substring;
+mod p43_multiply_strings;
 mod p49_group_anagrams;
 mod p5_longest_palindromic_substring;
 mod p6_zigzag_conversion;
