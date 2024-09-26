@@ -18,5 +18,6 @@ mod p43_multiply_strings;
 mod p49_group_anagrams;
 mod p5_longest_palindromic_substring;
 mod p6_zigzag_conversion;
+mod p729_my_calendar_i;
 mod p7_reverse_integer;
 mod p8_string_to_integer;
