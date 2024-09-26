@@ -10,4 +10,5 @@ mod p35_search_insert_position;
 mod p58_length_of_last_word;
 mod p66_plus_one;
 mod p67_add_binary;
+mod p88_merge_sorted_array;
 mod p9_palindrome_number;
