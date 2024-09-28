@@ -28,7 +28,6 @@ nums contains distinct values sorted in ascending order.
 */
 
 #[allow(dead_code)]
-
 pub fn search_insert(nums: &[i32], target: i32) -> i32 {
     let mut left = 0;
     let mut right = nums.len() as i32 - 1;

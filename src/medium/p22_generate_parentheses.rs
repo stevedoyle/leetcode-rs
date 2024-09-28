@@ -16,7 +16,6 @@ Constraints:
 use std::collections::VecDeque;
 
 #[allow(dead_code)]
-
 pub fn generate_parenthesis(n: i32) -> Vec<String> {
     let mut res = Vec::new();
     let mut stack = VecDeque::new();

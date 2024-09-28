@@ -23,7 +23,6 @@ haystack and needle consist of only lowercase English characters.
 */
 
 #[allow(dead_code)]
-
 pub fn str_str(haystack: String, needle: String) -> i32 {
     if needle.is_empty() {
         return 0;
