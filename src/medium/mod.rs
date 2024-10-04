@@ -16,6 +16,7 @@ mod p38_count_and_say;
 mod p3_longest_substring;
 mod p43_multiply_strings;
 mod p49_group_anagrams;
+mod p55_jump_game;
 mod p5_longest_palindromic_substring;
 mod p641_design_circular_deque;
 mod p6_zigzag_conversion;
