@@ -1,6 +1,7 @@
 mod p125_valid_palindrome;
 mod p13_roman_to_integer;
 mod p14_longest_common_prefix;
+mod p190_reverse_bits;
 mod p1_two_sum;
 mod p20_valid_parentheses;
 mod p219_contains_duplicate_ii;
