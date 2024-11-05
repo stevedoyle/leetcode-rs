@@ -10,6 +10,7 @@ mod p19_remove_nth_node_from_end_of_list;
 mod p22_generate_parentheses;
 mod p24_swap_nodes_in_pairs;
 mod p2684_max_number_of_moves_in_grid;
+mod p2914_min_changes_to_make_bin_string_beautiful;
 mod p29_divide_two_integers;
 mod p2_add_two_numbers;
 mod p34_find_first_and_last_position_of_element_in_sorted_array;
